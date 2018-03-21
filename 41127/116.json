@@ -1,0 +1,423 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "United Nations Office for the Coordination of Humanitarian Affairs (UNOCHA)",
+            "ref": "41127",
+            "type": "40"
+        },
+        "default-currency": "USD",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ascii",
+        "data-encoding-override": "utf_8",
+        "data-structure": {
+            "multiple": [
+                "transaction",
+                "country-budget-items"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI-ID",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Recipient Country / Region",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Ongoing",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Recipient Country / Region",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Project code (IATI)",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "2012 Budget": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "2012 Budget",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "2012",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Start date",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "01/01/2012",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "End date",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "31/12/2012",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "2012 Budget ",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "USD",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "Contribution": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "2012 Contributions": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "2012 Contributions": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "2012 Contributions",
+            "fields": {
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "2012",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "2012 Contributions ",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "USD",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "transaction-type": {
+                    "datatype": "constant",
+                    "constant": "Contribution",
+                    "alternatives-counter": ""
+                },
+                "provider-org": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "receiver-org": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "transaction-date": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "flow-type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "aid-type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "finance-type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "tied-status": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "disbursement-channel": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "Donor": {
+                    "datatype": "column",
+                    "column": "Donor name",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "2013 Budget": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "2013 Budget",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "2013",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "01/01/2013",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "31/12/2013",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "2013 Budget ",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "2013 Contributions": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "2013 Contributions",
+            "fields": {
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "2013",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "2013  Contributions ",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Donor contribution",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "receiver-org": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "transaction-date": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "flow-type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "aid-type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "finance-type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "tied-status": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "disbursement-channel": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "Donor": {
+                    "datatype": "column",
+                    "column": "Donor name",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

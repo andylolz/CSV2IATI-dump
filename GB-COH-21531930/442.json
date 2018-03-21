@@ -1,0 +1,249 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "International Alert",
+            "ref": "GB-COH-21531930",
+            "type": "21"
+        },
+        "default-currency": "GBP",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ISO-8859-2",
+        "data-encoding-override": "",
+        "data-structure": {
+            "multiple": [
+                "iati-identifier"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Title (Agency language)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Description (Agency language)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Activity Identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Activity Dates (Start Date)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-end": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity End Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Activity Dates (End Date)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Recipient Country",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Recipient Country Code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-region": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "Recipient Region",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Recipient Region",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Recipient Region Code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "funding-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Funding Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Participating Organisation (Funding)",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "Transaction Type",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "sector",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Sector (DAC CRS)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Financial transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Financial transaction",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Financial Transaction",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction Type",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "Transaction date",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "flow-type": {
+                    "datatype": "compound",
+                    "label": "Flow Type",
+                    "fields": {
+                        "code": {
+                            "datatype": "column",
+                            "column": "Default Flow Type",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "aid-type": {
+                    "datatype": "compound",
+                    "label": "Aid Type",
+                    "fields": {
+                        "code": {
+                            "datatype": "column",
+                            "column": "Default Aid Type",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

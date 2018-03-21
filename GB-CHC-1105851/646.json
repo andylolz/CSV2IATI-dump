@@ -1,0 +1,218 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Christian Aid",
+            "ref": "GB-CHC-1105851",
+            "type": "21"
+        },
+        "default-currency": "GBP",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "utf-8",
+        "data-encoding-override": "",
+        "data-structure": {
+            "multiple": [
+                "transaction",
+                "recipient-country"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "Identifier": {
+                    "datatype": "column",
+                    "column": "Funding Code",
+                    "text-transform-type": "text-before",
+                    "text-transform-format": "GB-CHC-1105851-",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Name",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Description",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Status Code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date",
+            "fields": {
+                "type": {
+                    "datatype": "column",
+                    "column": "Status Code",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Start date",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-end": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity End Date",
+            "fields": {
+                "type": {
+                    "datatype": "column",
+                    "column": "Status Code",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "End date",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Country Code",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "Percentage",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "funding-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Funding Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "Donor Identifier",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "10",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sector",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "DAC Sector",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "100",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction Value",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "Currency",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "code": {
+                            "datatype": "column",
+                            "column": "Transaction Type",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "Transaction Date",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

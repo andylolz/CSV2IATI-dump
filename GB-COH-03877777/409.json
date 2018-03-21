@@ -1,0 +1,307 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "CDC Group plc",
+            "ref": "GB-COH-03877777",
+            "type": "70"
+        },
+        "default-currency": "GBP",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ISO-8859-2",
+        "data-encoding-override": ""
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI Identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Project Title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI Country",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "IATI country code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-region": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "Recipient Region",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI Region",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "IATI Region Code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "extending-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Extending Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Extending",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Extending Agency",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "GB-2",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "70",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sector",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI Sector",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "IATI Sector Code",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction",
+            "fields": {
+                "ref": {
+                    "datatype": "column",
+                    "column": "Donor Project number",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Amount paid out / (received)",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2013-12-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction description for IATI",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction Type",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "Transaction Type Code",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction Provider Name",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": "Transaction Provider Reference",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction Receiver Name",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": "Transaction Receiver Reference",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "flow-type": {
+                    "datatype": "compound",
+                    "label": "Flow Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Type of Flow Name",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "Type of Flow (10=ODA, 20=OOF)",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "aid-type": {
+                    "datatype": "compound",
+                    "label": "Aid Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Project-type interventions",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "Type of Aid Code",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "finance-type": {
+                    "datatype": "compound",
+                    "label": "Finance Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Type of Finance Name",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "Type of Finance (411=loan, 511=equity)",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "tied-status": {
+                    "datatype": "compound",
+                    "label": "Tied Status",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Untied",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "5",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "collaboration-type": {
+            "datatype": "compound",
+            "iati-field": "collaboration-type",
+            "label": "collaboration-type",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Private sector outflow",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Collaboration Type",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

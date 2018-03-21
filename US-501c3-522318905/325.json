@@ -1,0 +1,231 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Development Gateway",
+            "ref": "US-501c3-522318905",
+            "type": ""
+        },
+        "default-currency": "USD",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ascii",
+        "data-encoding-override": "utf_8",
+        "data-structure": {
+            "multiple": [
+                "sector",
+                "participating-org",
+                "location"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "project_ID",
+                    "text-transform-type": "text-before",
+                    "text-transform-format": "US-501c3-522318905-",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "project_title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "status",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "actual_start_date",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Nepal",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "NP",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "funding-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Funding Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "donors",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "iati_donor_codes",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sector",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "ad_sector_name",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "ad_sector_code",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "ADT",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

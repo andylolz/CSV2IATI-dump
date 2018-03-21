@@ -1,0 +1,192 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Spatial Dev",
+            "ref": "US-SD-98107",
+            "type": "70"
+        },
+        "default-currency": "KES",
+        "lang": "EN",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "data-encoding": "ISO-8859-2",
+        "data-structure": {
+            "multiple": ""
+        }
+    },
+    "mapping": {
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "iati-identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "general description",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "activity-status",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "start-actual",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-end": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity End Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "end-planned",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Kenya",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "KE",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-region": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "Recipient Region",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "adm1",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sector",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "sector",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "sector code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "total value",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "location": {
+            "datatype": "compound",
+            "iati-field": "location",
+            "label": "location",
+            "fields": {
+                "coordinates": {
+                    "datatype": "compound",
+                    "label": "Coordinates",
+                    "fields": {
+                        "latitude": {
+                            "datatype": "column",
+                            "column": "latitude",
+                            "alternatives-counter": ""
+                        },
+                        "longitude": {
+                            "datatype": "column",
+                            "column": "longitude",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

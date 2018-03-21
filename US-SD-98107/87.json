@@ -1,0 +1,253 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "spatial dev",
+            "ref": "US-SD-98107",
+            "type": "70"
+        },
+        "default-currency": "KES",
+        "lang": "EN",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ISO-8859-2",
+        "data-encoding-override": ""
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "iati-identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "general description",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "activity-status",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "start-planned",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-end": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity End Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "end-planned",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Kenya",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "KE",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-region": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "Recipient Region",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "adm1",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sector",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "sector code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "location": {
+            "datatype": "compound",
+            "iati-field": "location",
+            "label": "location",
+            "fields": {
+                "coordinates": {
+                    "datatype": "compound",
+                    "label": "Coordinates",
+                    "fields": {
+                        "latitude": {
+                            "datatype": "column",
+                            "column": "latitude",
+                            "alternatives-counter": ""
+                        },
+                        "longitude": {
+                            "datatype": "column",
+                            "column": "longitude",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Sub-sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sub-sector",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "subsector_code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "participating-org _ type_1",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "column",
+                    "column": " role_1",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org_2": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org_2",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "participating-org _ type_2",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "column",
+                    "column": " role_2",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org_3": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org_3",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "participating-org _ type_3",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "column",
+                    "column": " role_3",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org_4": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org_4",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "participating-org _ type_4",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "column",
+                    "column": " role_4",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

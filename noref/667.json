@@ -1,0 +1,85 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "",
+            "ref": "",
+            "type": ""
+        },
+        "default-currency": "",
+        "lang": "",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "SHIFT_JIS",
+        "data-encoding-override": ""
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "2_other-identifier": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "2_other-identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "owner-ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "owner-name": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "3_title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "3_title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "1_iati-identifier~": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "1_iati-identifier~",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

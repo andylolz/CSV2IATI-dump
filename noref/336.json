@@ -1,0 +1,243 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "",
+            "ref": "",
+            "type": ""
+        },
+        "default-currency": "",
+        "lang": "",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ascii",
+        "data-encoding-override": "utf_8",
+        "data-structure": {
+            "multiple": [
+                "transaction",
+                "sector",
+                "participating-org",
+                "location"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "project_ID",
+                    "text-transform-type": "text-before",
+                    "text-transform-format": "orgID-",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "project_title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "status",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "actual_start_date",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Nepal",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "NP",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "funding-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Funding Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "donors",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "iati_donor_codes",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sector",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "ad_sector_name",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "ad_sector_code",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "ADT",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "location": {
+            "datatype": "compound",
+            "iati-field": "location",
+            "label": "location",
+            "fields": {
+                "location-type": {
+                    "datatype": "compound",
+                    "label": "Location Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "location_type",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "location_code",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "name": {
+                    "datatype": "compound",
+                    "label": "Name",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "placename",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "administrative": {
+                    "datatype": "compound",
+                    "label": "Administrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "lowest_adm_name",
+                            "alternatives-counter": ""
+                        },
+                        "country": {
+                            "datatype": "constant",
+                            "constant": "NP",
+                            "alternatives-counter": ""
+                        },
+                        "adm_code": {
+                            "datatype": "column",
+                            "column": "lowest_adm_code",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "coordinates": {
+                    "datatype": "compound",
+                    "label": "Coordinates",
+                    "fields": {
+                        "latitude": {
+                            "datatype": "column",
+                            "column": "latitude",
+                            "alternatives-counter": ""
+                        },
+                        "longitude": {
+                            "datatype": "column",
+                            "column": "longitude",
+                            "alternatives-counter": ""
+                        },
+                        "precision": {
+                            "datatype": "column",
+                            "column": "precision_code",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "gazetteer-entry": {
+                    "datatype": "compound",
+                    "label": "Gazetteer Entry",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "GEO",
+                            "alternatives-counter": ""
+                        },
+                        "gazetteer-ref": {
+                            "datatype": "column",
+                            "column": "geoname_ID",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

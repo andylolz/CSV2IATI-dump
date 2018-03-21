@@ -1,0 +1,407 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Foreign & Commonwealth Office",
+            "ref": "GB-CHC-209131",
+            "type": "10"
+        },
+        "default-currency": "GBP",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ISO-8859-2",
+        "data-encoding-override": "",
+        "data-structure": {
+            "multiple": [
+                "transaction",
+                "recipient-country"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI Identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Description",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Recipient Country",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "funding-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Funding Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "constant",
+                    "constant": "United Kingdom",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "GB",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "10",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "extending-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Extending Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Extending",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Foreign & Commonwealth Office",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "GB-3",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "10",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sector",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": " Sector",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2014-04-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Disbursement",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "D",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Transaction Date",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2014-06-30",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "other-identifier": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "other-identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Other Identifier",
+                    "alternatives-counter": ""
+                },
+                "owner-ref": {
+                    "datatype": "constant",
+                    "constant": "GB-3",
+                    "alternatives-counter": ""
+                },
+                "owner-name": {
+                    "datatype": "constant",
+                    "constant": "Foreign & Commonwealth Office",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-flow-type": {
+            "datatype": "compound",
+            "iati-field": "default-flow-type",
+            "label": "default-flow-type",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Default Flow Type",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-finance-type": {
+            "datatype": "compound",
+            "iati-field": "default-finance-type",
+            "label": "default-finance-type",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Default Finance Type",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-aid-type": {
+            "datatype": "compound",
+            "iati-field": "default-aid-type",
+            "label": "default-aid-type",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": " Default Aid Type",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "budget": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "budget",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2014-04-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2015-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Budget",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2014-04-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "activity-date": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity-date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "constant",
+                    "constant": "2014-04-01",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-end": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity-date-end",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "constant",
+                    "constant": "2015-03-31",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "activity-status",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Implementing",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "2",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-scope": {
+            "datatype": "compound",
+            "iati-field": "activity-scope",
+            "label": "activity-scope",
+            "fields": {
+                "code": {
+                    "datatype": "constant",
+                    "constant": "4",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-website": {
+            "datatype": "compound",
+            "iati-field": "activity-website",
+            "label": "activity-website",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

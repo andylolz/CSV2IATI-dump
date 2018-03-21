@@ -1,0 +1,663 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Omidyar Network Fund Inc.",
+            "ref": "US-EIN-20-1173866",
+            "type": "60"
+        },
+        "default-currency": "USD",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "utf-8",
+        "data-encoding-override": ""
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "iati-identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI Activity ID",
+                    "text-transform-type": "text-before",
+                    "text-transform-format": "US-EIN-20-1173866-",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "other-identifier": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "other-identifier",
+            "fields": {
+                "ref": {
+                    "datatype": "column",
+                    "column": "ON ID",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "A1",
+                    "alternatives-counter": ""
+                },
+                "owner-org": {
+                    "datatype": "compound",
+                    "label": "Owner Org",
+                    "fields": {
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "US-EIN-20-1173866",
+                            "alternatives-counter": ""
+                        },
+                        "narrative": {
+                            "datatype": "compound",
+                            "label": "Narrative",
+                            "fields": {
+                                "text": {
+                                    "datatype": "constant",
+                                    "constant": "OMIDYAR NETWORK FUND INC",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "title",
+            "fields": {
+                "narrative": {
+                    "datatype": "compound",
+                    "label": "Narrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Investment Name",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "description",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "narrative": {
+                    "datatype": "compound",
+                    "label": "Narrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Description",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "activity-status",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "IATI Activity Status",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "contact-info": {
+            "datatype": "compound",
+            "iati-field": "contact-info",
+            "label": "contact-info",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "organisation": {
+                    "datatype": "compound",
+                    "label": "Organisation",
+                    "fields": {
+                        "narrative": {
+                            "datatype": "compound",
+                            "label": "Narrative",
+                            "fields": {
+                                "text": {
+                                    "datatype": "constant",
+                                    "constant": "Ominiday Network",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "person-name": {
+                    "datatype": "compound",
+                    "label": "Person Name",
+                    "fields": {
+                        "narrative": {
+                            "datatype": "compound",
+                            "label": "Narrative",
+                            "fields": {
+                                "text": {
+                                    "datatype": "column",
+                                    "column": "Investment Lead",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "email": {
+                    "datatype": "compound",
+                    "label": "Email",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "iati@omidyar.com",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "website": {
+                    "datatype": "compound",
+                    "label": "Website",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "https://www.omidyar.com/",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "mailing-address": {
+                    "datatype": "compound",
+                    "label": "Mailing Address",
+                    "fields": {
+                        "narrative": {
+                            "datatype": "compound",
+                            "label": "Narrative",
+                            "fields": {
+                                "text": {
+                                    "datatype": "constant",
+                                    "constant": "1991 Broadway Street, Suite 200 Redwood City, California 94063, United States",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "activity-scope": {
+            "datatype": "compound",
+            "iati-field": "activity-scope",
+            "label": "activity-scope",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Activity Scope",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "recipient-country",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Country Code",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-region": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "recipient-region",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "IATI Geographic Focus Code",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "sector",
+            "fields": {
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "99",
+                    "alternatives-counter": ""
+                },
+                "vocabulary-uri": {
+                    "datatype": "constant",
+                    "constant": "",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Primary Investment Initiative",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "narrative": {
+                    "datatype": "compound",
+                    "label": "Narrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Primary Investment Initiative",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "collaboration-type": {
+            "datatype": "compound",
+            "iati-field": "collaboration-type",
+            "label": "collaboration-type",
+            "fields": {
+                "code": {
+                    "datatype": "constant",
+                    "constant": "6",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-finance-type": {
+            "datatype": "compound",
+            "iati-field": "default-finance-type",
+            "label": "default-finance-type",
+            "fields": {
+                "code": {
+                    "datatype": "constant",
+                    "constant": "110",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-flow-type": {
+            "datatype": "compound",
+            "iati-field": "default-flow-type",
+            "label": "default-flow-type",
+            "fields": {
+                "code": {
+                    "datatype": "constant",
+                    "constant": "30",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-aid-type": {
+            "datatype": "compound",
+            "iati-field": "default-aid-type",
+            "label": "default-aid-type",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "AidType",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-tied-status": {
+            "datatype": "compound",
+            "iati-field": "default-tied-status",
+            "label": "default-tied-status",
+            "fields": {
+                "code": {
+                    "datatype": "constant",
+                    "constant": "5",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "transaction",
+            "fields": {
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "2",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "Effective Date",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Amount (to be) Committed (in $)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "Effective Date",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "narrative": {
+                            "datatype": "compound",
+                            "label": "Narrative",
+                            "fields": {
+                                "text": {
+                                    "datatype": "column",
+                                    "column": "Investment Name",
+                                    "text-transform-type": "text-before",
+                                    "text-transform-format": "Amount Committed (in $) to ",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "US-EIN-20-1173866",
+                            "alternatives-counter": ""
+                        },
+                        "type": {
+                            "datatype": "constant",
+                            "constant": "60",
+                            "alternatives-counter": ""
+                        },
+                        "narrative": {
+                            "datatype": "compound",
+                            "label": "Narrative",
+                            "fields": {
+                                "text": {
+                                    "datatype": "constant",
+                                    "constant": "OMIDYAR NETWORK FUND INC",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "ref": {
+                            "datatype": "column",
+                            "column": "Registration ID",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "type": {
+                            "datatype": "column",
+                            "column": "IATI Org Type",
+                            "alternatives-counter": ""
+                        },
+                        "narrative": {
+                            "datatype": "compound",
+                            "label": "Narrative",
+                            "fields": {
+                                "text": {
+                                    "datatype": "column",
+                                    "column": "Legal Name",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "disbursement-channel": {
+                    "datatype": "compound",
+                    "label": "Disbursement Channel",
+                    "fields": {
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "sector": {
+                    "datatype": "compound",
+                    "label": "Sector",
+                    "fields": {
+                        "vocabulary": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "vocabulary-uri": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "narrative": {
+                            "datatype": "compound",
+                            "label": "Narrative",
+                            "fields": {
+                                "xml:lang": {
+                                    "datatype": "column",
+                                    "column": "",
+                                    "alternatives-counter": ""
+                                },
+                                "text": {
+                                    "datatype": "column",
+                                    "column": "",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "start-date": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "start-date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "2",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Effective Date",
+                    "text-transform-type": "date",
+                    "text-transform-format": "%d/%m/%Y",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "end-date": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "end-date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "3",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Grant Expiration Date (Non-Profit)",
+                    "text-transform-type": "date",
+                    "text-transform-format": "%d/%m/%Y",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "ON-Funding": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "ON-Funding",
+            "fields": {
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "US-EIN-20-1173866",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "60",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "activity-id": {
+                    "datatype": "column",
+                    "column": "",
+                    "text-transform-type": "text-before",
+                    "text-transform-format": "US-EIN-20-1173866-",
+                    "alternatives-counter": ""
+                },
+                "narrative": {
+                    "datatype": "compound",
+                    "label": "Narrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "OMIDYAR NETWORK FUND INC",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Implementing Org": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Implementing Org",
+            "fields": {
+                "ref": {
+                    "datatype": "column",
+                    "column": "Registration ID",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "IATI Org Type",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "4",
+                    "alternatives-counter": ""
+                },
+                "activity-id": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "narrative": {
+                    "datatype": "compound",
+                    "label": "Narrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Legal Name",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

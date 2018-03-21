@@ -1,0 +1,627 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "",
+            "ref": "",
+            "type": ""
+        },
+        "default-currency": "",
+        "lang": "",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ISO-8859-2",
+        "data-encoding-override": ""
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Iati-identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Title (EN)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Description",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity status",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Activity status code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date",
+            "fields": {
+                "type": {
+                    "datatype": "column",
+                    "column": "Activity period type [start date]",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Activity date iso-date [start date]",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-end": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity End Date",
+            "fields": {
+                "type": {
+                    "datatype": "column",
+                    "column": "Activity period type [end date]",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Activity date iso-date [end date]",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Recipient country",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Recipient country code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "funding-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Funding Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "extending-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Extending Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Extending",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "implementing-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Implementing Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Implementing",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sector",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Sector",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Sector code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction",
+            "fields": {
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "flow-type": {
+                    "datatype": "compound",
+                    "label": "Flow Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "aid-type": {
+                    "datatype": "compound",
+                    "label": "Aid Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "finance-type": {
+                    "datatype": "compound",
+                    "label": "Finance Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "tied-status": {
+                    "datatype": "compound",
+                    "label": "Tied Status",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "disbursement-channel": {
+                    "datatype": "compound",
+                    "label": "Disbursement Channel",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Title (FR)": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title (FR)",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Title (FR)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Title (NL)": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title (NL)",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Title (NL)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker (Gender Equality)": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker (Gender Equality)",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Gender Equality",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy marker code [Gender Equality]",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "Policy marker [Gender Equality]",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker (Participatory Democratisation / Good Governance)": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker (Participatory Democratisation / Good Governance)",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Participatory Democratisation / Good Governance",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy marker code [Participatory Democratisation / Good Governance]",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "Policy marker [Participatory Democratisation / Good Governance]",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker (Trade Development\t)": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker (Trade Development\t)",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Trade Development",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy marker code [Trade Development]",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "Policy marker [Trade Development]",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker (Biodiversity)": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker (Biodiversity)",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Biodiversity",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy marker code [Biodiversity]",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "Policy marker [Biodiversity]",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker (Climate Change Mitigation)": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker (Climate Change Mitigation)",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Climate Change Mitigation",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy marker code [CC Mitigation]",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "Policy marker [CC Mitigation]",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker (Climate Change Adaptation)": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker (Climate Change Adaptation)",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Climate Change Adaptation",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy marker code [CC Adaptation]",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "Policy marker [CC Adaptation]",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker (Desertification)": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker (Desertification)",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Desertification",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy marker code [Desertification]",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "Policy marker [Desertification]",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker (Maternal, Reproductive, Newborn, Child Health)": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker (Maternal, Reproductive, Newborn, Child Health)",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Maternal, Reproductive, Newborn, Child Health",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy marker code [Maternal",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "Policy marker [Maternal",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1399 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Japan International Cooperation Agency",
+            "ref": "JP-8",
+            "type": "15"
+        },
+        "default-currency": "JPY",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "SHIFT_JIS",
+        "data-encoding-override": "",
+        "data-structure": {
+            "multiple": [
+                "transaction"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI activity identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "other-identifier": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "other-identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Other activity identifiers",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Title (Agency language)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "description",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Description (Agency language)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "activity-status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Status",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity dates start planned": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity dates start planned",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "planned start",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Activity Dates(Start Planned)",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Dates(Start Planned) text",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity dates start actual": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity dates start actual",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "actual start",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Activity Dates(Start\u3000Actual)",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Dates(Start\u3000Actual) text",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity dates end planned": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity dates end planned",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "planned end",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Activity Dates(End Planned)",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Dates(End Planned) text",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity dates end actual": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity dates end actual",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "actual end",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Activity Dates(End actual)",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Dates(End actual) text",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity contacts": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "activity contacts",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Activity Contacts",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org funding": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org funding",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Japanese International Cooperation Agency",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "XM-DAC-701",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "10",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org extending": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org extending",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org implementing": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org implementing",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org accountable": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org accountable",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "recipient-country",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Recipient Country(namee)",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Recipient Country(Code)",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-region": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "recipient-region",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Recipient Region(namee)",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Recipient Region(Code)",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "location": {
+            "datatype": "compound",
+            "iati-field": "location",
+            "label": "location",
+            "fields": {
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "location-type": {
+                    "datatype": "compound",
+                    "label": "Location Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "name": {
+                    "datatype": "compound",
+                    "label": "Name",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "administrative": {
+                    "datatype": "compound",
+                    "label": "Administrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "country": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "adm1": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "adm2": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "coordinates": {
+                    "datatype": "compound",
+                    "label": "Coordinates",
+                    "fields": {
+                        "latitude": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "longitude": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "precision": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "gazetteer-entry": {
+                    "datatype": "compound",
+                    "label": "Gazetteer Entry",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "gazetteer-ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "sector dac crs": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "sector dac crs",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Sector (DAC CRS name)",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Sector (DAC CRS code)",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector agency specific": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "sector agency specific",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Sector (Agency specific name)",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Sector (Agency specific code)",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Gender",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy Markers(Gender)",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "collaboration-type": {
+            "datatype": "compound",
+            "iati-field": "collaboration-type",
+            "label": "collaboration-type",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-flow-type": {
+            "datatype": "compound",
+            "iati-field": "default-flow-type",
+            "label": "default-flow-type",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-finance-type": {
+            "datatype": "compound",
+            "iati-field": "default-finance-type",
+            "label": "default-finance-type",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-aid-type": {
+            "datatype": "compound",
+            "iati-field": "default-aid-type",
+            "label": "default-aid-type",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-tied-status": {
+            "datatype": "compound",
+            "iati-field": "default-tied-status",
+            "label": "default-tied-status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "budget": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "budget",
+            "fields": {
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "planned-disbursement": {
+            "datatype": "compound",
+            "iati-field": "planned-disbursement",
+            "label": "planned-disbursement",
+            "fields": {
+                "updated": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "Policy Markers(Environmentr)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "country-budget-items": {
+            "datatype": "compound",
+            "iati-field": "country-budget-items",
+            "label": "country-budget-items",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "budget-item": {
+                    "datatype": "compound",
+                    "label": "Budget Item",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "percentage": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "description": {
+                            "datatype": "compound",
+                            "label": "Description",
+                            "fields": {
+                                "text": {
+                                    "datatype": "column",
+                                    "column": "",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "transaction",
+            "fields": {
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "flow-type": {
+                    "datatype": "compound",
+                    "label": "Flow Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "aid-type": {
+                    "datatype": "compound",
+                    "label": "Aid Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "finance-type": {
+                    "datatype": "compound",
+                    "label": "Finance Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "tied-status": {
+                    "datatype": "compound",
+                    "label": "Tied Status",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "disbursement-channel": {
+                    "datatype": "compound",
+                    "label": "Disbursement Channel",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "document-link": {
+            "datatype": "compound",
+            "iati-field": "document-link",
+            "label": "document-link",
+            "fields": {
+                "url": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "format": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "title": {
+                    "datatype": "compound",
+                    "label": "Title",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "category": {
+                    "datatype": "compound",
+                    "label": "Category",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "language": {
+                    "datatype": "compound",
+                    "label": "Language",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "activity-website": {
+            "datatype": "compound",
+            "iati-field": "activity-website",
+            "label": "activity-website",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "related-activity": {
+            "datatype": "compound",
+            "iati-field": "related-activity",
+            "label": "related-activity",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "conditions": {
+            "datatype": "compound",
+            "iati-field": "conditions",
+            "label": "conditions",
+            "fields": {
+                "attached": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "condition": {
+                    "datatype": "compound",
+                    "label": "Condition",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "type": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "result": {
+            "datatype": "compound",
+            "iati-field": "result",
+            "label": "result",
+            "fields": {
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "aggregation-status": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "title": {
+                    "datatype": "compound",
+                    "label": "Title",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "indicator": {
+                    "datatype": "compound",
+                    "label": "Indicator",
+                    "fields": {
+                        "measure": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "ascending": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "title": {
+                            "datatype": "compound",
+                            "label": "Title",
+                            "fields": {
+                                "text": {
+                                    "datatype": "column",
+                                    "column": "",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        },
+                        "description": {
+                            "datatype": "compound",
+                            "label": "Description",
+                            "fields": {
+                                "text": {
+                                    "datatype": "column",
+                                    "column": "",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        },
+                        "baseline": {
+                            "datatype": "compound",
+                            "label": "Baseline",
+                            "fields": {
+                                "year": {
+                                    "datatype": "column",
+                                    "column": "",
+                                    "alternatives-counter": ""
+                                },
+                                "value": {
+                                    "datatype": "column",
+                                    "column": "",
+                                    "alternatives-counter": ""
+                                },
+                                "comment": {
+                                    "datatype": "compound",
+                                    "label": "Comment",
+                                    "fields": {
+                                        "text": {
+                                            "datatype": "column",
+                                            "column": "",
+                                            "alternatives-counter": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "period": {
+                            "datatype": "compound",
+                            "label": "Period",
+                            "fields": {
+                                "period-start": {
+                                    "datatype": "compound",
+                                    "label": "Period Start",
+                                    "fields": {
+                                        "text": {
+                                            "datatype": "column",
+                                            "column": "",
+                                            "alternatives-counter": ""
+                                        },
+                                        "iso-date": {
+                                            "datatype": "column",
+                                            "column": "",
+                                            "alternatives-counter": ""
+                                        }
+                                    }
+                                },
+                                "period-end": {
+                                    "datatype": "compound",
+                                    "label": "Period End",
+                                    "fields": {
+                                        "text": {
+                                            "datatype": "column",
+                                            "column": "",
+                                            "alternatives-counter": ""
+                                        },
+                                        "iso-date": {
+                                            "datatype": "column",
+                                            "column": "",
+                                            "alternatives-counter": ""
+                                        }
+                                    }
+                                },
+                                "target": {
+                                    "datatype": "compound",
+                                    "label": "Target",
+                                    "fields": {
+                                        "value": {
+                                            "datatype": "column",
+                                            "column": "",
+                                            "alternatives-counter": ""
+                                        },
+                                        "comment": {
+                                            "datatype": "compound",
+                                            "label": "Comment",
+                                            "fields": {
+                                                "text": {
+                                                    "datatype": "column",
+                                                    "column": "",
+                                                    "alternatives-counter": ""
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "actual": {
+                                    "datatype": "compound",
+                                    "label": "Actual",
+                                    "fields": {
+                                        "value": {
+                                            "datatype": "column",
+                                            "column": "",
+                                            "alternatives-counter": ""
+                                        },
+                                        "comment": {
+                                            "datatype": "compound",
+                                            "label": "Comment",
+                                            "fields": {
+                                                "text": {
+                                                    "datatype": "column",
+                                                    "column": "",
+                                                    "alternatives-counter": ""
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "policy-marker gender": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker gender",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Gender",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy Markers(Gender)",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker environment": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker environment",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Environment",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy Markers(Gender)",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker pdgg": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker pdgg",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "PDGG",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Policy Markers(PDGG)",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

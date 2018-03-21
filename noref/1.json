@@ -1,0 +1,35 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "",
+            "ref": "",
+            "type": ""
+        },
+        "default-currency": "",
+        "lang": "",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "data-encoding": "ISO-8859-2",
+        "data-structure": {
+            "multiple": ""
+        }
+    },
+    "mapping": {
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "evil",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Japan International Cooperation Agency",
+            "ref": "XM-DAC-701-8",
+            "type": "10"
+        },
+        "default-currency": "JPY",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ascii",
+        "data-encoding-override": "",
+        "data-structure": {
+            "multiple": [
+                "document-link"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "1_iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "1_iati-identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "iati-identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "19_budget": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "19_budget",
+            "fields": {
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "period-start",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "period-start",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "period-end",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "period-end",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "147859000000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "JPY",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "value value-date",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "23_document-link": {
+            "datatype": "compound",
+            "iati-field": "document-link",
+            "label": "23_document-link",
+            "fields": {
+                "url": {
+                    "datatype": "column",
+                    "column": "document-link",
+                    "alternatives-counter": ""
+                },
+                "format": {
+                    "datatype": "column",
+                    "column": "document-link format",
+                    "alternatives-counter": ""
+                },
+                "title": {
+                    "datatype": "compound",
+                    "label": "Title",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "title",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "category": {
+                    "datatype": "compound",
+                    "label": "Category",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "category",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "category code",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "language": {
+                    "datatype": "compound",
+                    "label": "Language",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "language ",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "language code",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

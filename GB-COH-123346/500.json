@@ -1,0 +1,71 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Test Org",
+            "ref": "GB-COH-123346",
+            "type": "21"
+        },
+        "default-currency": "EUR",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "General Enquires",
+            "telephone": "0161299999999",
+            "email": "general@example.org",
+            "address": "",
+            "add-to-activities": [
+                "true"
+            ]
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ascii",
+        "data-encoding-override": ""
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI ID",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "recipient-country",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Country",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

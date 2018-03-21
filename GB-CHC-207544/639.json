@@ -1,0 +1,157 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Sightsavers",
+            "ref": "GB-CHC-207544",
+            "type": "21"
+        },
+        "default-currency": "GBP",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ascii",
+        "data-encoding-override": "",
+        "data-structure": {
+            "multiple": [
+                "budget",
+                "document-link"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Org ID",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "name": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "name",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Sightsavers",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "budget": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "budget",
+            "fields": {
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "BUDGET START DATE",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "BUDGET END DATE",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "BUDGET VALUE",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "BUDGET VALUE DATE",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "document-link": {
+            "datatype": "compound",
+            "iati-field": "document-link",
+            "label": "document-link",
+            "fields": {
+                "url": {
+                    "datatype": "column",
+                    "column": "Document URL",
+                    "alternatives-counter": ""
+                },
+                "format": {
+                    "datatype": "column",
+                    "column": "Document Format",
+                    "alternatives-counter": ""
+                },
+                "title": {
+                    "datatype": "compound",
+                    "label": "Title",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Document Title",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "category": {
+                    "datatype": "compound",
+                    "label": "Category",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Document Cat Text",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "Document Category",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "language": {
+                    "datatype": "compound",
+                    "label": "Language",
+                    "fields": {
+                        "code": {
+                            "datatype": "column",
+                            "column": "Document Lang",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

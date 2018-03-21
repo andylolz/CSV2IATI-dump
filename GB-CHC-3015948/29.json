@@ -1,0 +1,334 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Saferworld",
+            "ref": "GB-CHC-3015948",
+            "type": "21"
+        },
+        "default-currency": "GBP",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "data-encoding": "ISO-8859-2",
+        "data-structure": {
+            "multiple": [
+                "transaction"
+            ]
+        }
+    },
+    "mapping": {
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Project Title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "activity status",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Project Start",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Project Start",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-end": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity End Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Project End",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Project End",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Country/Region",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "IATI Country code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-region": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "Recipient Region",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Region",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "Region code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "funding-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Funding Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Donor ",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "implementing-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Implementing Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Implementing",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Implementing org",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "Sector",
+            "fields": {
+                "code": {
+                    "datatype": "column",
+                    "column": "Sector",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction value",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "Transaction date",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction type",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Funding org",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Saferworld",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Transaction date",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "Transaction date",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Project Currency": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "Project Currency",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "curr",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Total Funding Amount": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "Total Funding Amount",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Total Amount-LC",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Additional Countries": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "Additional Countries",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "additional countries",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Other Implementing Organisation": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "Other Implementing Organisation",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Participating-org",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Provider Activity ID": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "Provider Activity ID",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Provider-activity-id",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Receiving Org Reference": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "Receiving Org Reference",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Ref",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

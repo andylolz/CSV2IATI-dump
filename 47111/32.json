@@ -1,0 +1,1292 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Adaptation Fund",
+            "ref": "47111",
+            "type": "40"
+        },
+        "default-currency": "USD",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ISO-8859-2",
+        "data-encoding-override": ""
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": " IATI Activity Identifer ",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": " Project Title ",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "Project Objectives",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "IATI Status Text",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "IATI Status Code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "Recipient Country",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": " Country ",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": " Country Codes ",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "100",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "funding-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Funding Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Adaptation Fund",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "47111",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "40",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "implementing-organisation": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "Implementing Organisation",
+            "fields": {
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Implementing",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": " Impl. Entities ",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": " IATI IE Org Ref ",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": " IATI IE Org Type ",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "document-link": {
+            "datatype": "compound",
+            "iati-field": "document-link",
+            "label": "document-link",
+            "fields": {
+                "url": {
+                    "datatype": "column",
+                    "column": " projecturl ",
+                    "alternatives-counter": ""
+                },
+                "format": {
+                    "datatype": "constant",
+                    "constant": "text/html",
+                    "alternatives-counter": ""
+                },
+                "language": {
+                    "datatype": "compound",
+                    "label": "Language",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "English",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "en",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "location": {
+            "datatype": "compound",
+            "iati-field": "location",
+            "label": "location",
+            "fields": {
+                "name": {
+                    "datatype": "compound",
+                    "label": "Name",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " projectsite ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "coordinates": {
+                    "datatype": "compound",
+                    "label": "Coordinates",
+                    "fields": {
+                        "latitude": {
+                            "datatype": "column",
+                            "column": " IATI Latitude ",
+                            "alternatives-counter": ""
+                        },
+                        "longitude": {
+                            "datatype": "column",
+                            "column": " IATI Longitude ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "activity-date-start-planned": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity-date-start-planned",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Expected Project start (date)",
+                    "text-transform-type": "date",
+                    "text-transform-format": "%d/%m/%Y",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Expected Project start (date)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-end-planned": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity-date-end-planned",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": " Project End (Date)",
+                    "text-transform-type": "date",
+                    "text-transform-format": "%d/%m/%Y",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": " Project End (Date)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start-actual": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity-date-start-actual",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Inception (Date)",
+                    "text-transform-type": "date",
+                    "text-transform-format": "%d/%m/%Y",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Inception (Date)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-end-actual1": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "activity-date-end-actual1",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "Actual End (Date)",
+                    "text-transform-type": "date",
+                    "text-transform-format": "%d/%m/%Y",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "Actual End (Date)",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "DAC-Sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "DAC-Sector",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": " IATI (DAC) Sector Text ",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": " IATI (DAC) Sector Code ",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "100",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "RO-Sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "RO-Sector",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": " Sector ",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "RO",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "100",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Commitment-Transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Commitment-Transaction",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Grant Amount (USD)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "Agreement Signature (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Grant Amount (Commitment)",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Commitment",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "C",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Adaptation Fund",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "47111",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": " IATI Activity Identifer ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " Impl. Entities ",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": " IATI IE Org Ref ",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Agreement Signature (Date)",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "Agreement Signature (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Expenditure-Transaction-AF": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Expenditure-Transaction-AF",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Agency Fees (USD)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "Agreement Signature (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Agency Fees",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Expenditure",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "E",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Agreement Signature (Date)",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "Agreement Signature (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Expenditure-Transaction-EC": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Expenditure-Transaction-EC",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Execution Costs (USD)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "Agreement Signature (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Execution Costs",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Expenditure",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "E",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "Agreement Signature (Date)",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "Agreement Signature (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Transaction-Tranche1": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction-Tranche1",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "1st Cash Transfer (USD)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": " 1st Tranfer (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Tranche1 Payment",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Disbursement",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "D",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Adaptation Fund",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "47111",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": " IATI Activity Identifer ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " Impl. Entities ",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": " IATI IE Org Ref ",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " 1st Tranfer (Date)",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": " 1st Tranfer (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Transaction-Tranche2": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction-Tranche2",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "2nd Cash Transfer (USD)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": " 2nd Tranfer (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Tranche2 Payment",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Disbursement",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "D",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Adaptation Fund",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "47111",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": " IATI Activity Identifer ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " Impl. Entities ",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": " IATI IE Org Ref ",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " 2nd Tranfer (Date)",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": " 2nd Tranfer (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Transaction-Tranche3": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction-Tranche3",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "3rd Cash Transfer (USD)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": " 3rd Actual Transfer (DATE)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Tranche3 Payment",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Disbursement",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "D",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Adaptation Fund",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "47111",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": " IATI Activity Identifer ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " Impl. Entities ",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": " IATI IE Org Ref ",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " 3rd Actual Transfer (DATE)",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": " 3rd Actual Transfer (DATE)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Transaction-Tranche4": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction-Tranche4",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "4th Cash Transfer (USD)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": " 4th Transfer (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Tranche4 Payment",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Disbursement",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "D",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Adaptation Fund",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "47111",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": " IATI Activity Identifer ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " Impl. Entities ",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": " IATI IE Org Ref ",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " 4th Transfer (Date)",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": " 4th Transfer (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Transaction-Tranche5": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction-Tranche5",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "5th Cash Transfer (USD)",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": " 5th transfer (DATE)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Tranche5 Payment",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Disbursement",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "D",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Adaptation Fund",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "47111",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": " IATI Activity Identifer ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " Impl. Entities ",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": " IATI IE Org Ref ",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " 5th transfer (DATE)",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": " 5th transfer (DATE)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "Transaction-Tranche6": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "Transaction-Tranche6",
+            "fields": {
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " 6th Cash Transfer (USD) ",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": " 6th Transfer (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Tranche6 Payment",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Disbursement",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "D",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Adaptation Fund",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "47111",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": " IATI Activity Identifer ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " Impl. Entities ",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": " IATI IE Org Ref ",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": " 6th Transfer (Date)",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": " 6th Transfer (Date)",
+                            "text-transform-type": "date",
+                            "text-transform-format": "%d/%m/%Y",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

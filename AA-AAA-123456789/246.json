@@ -1,0 +1,2351 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Agency A",
+            "ref": "AA-AAA-123456789",
+            "type": "21"
+        },
+        "default-currency": "EUR",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ascii",
+        "data-encoding-override": ""
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "Iati Identifier",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "AA-AAA-123456789-ABC123",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "Title",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Activity title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "General activity description text.  \tLong description of the activity with no particular structure.",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "Activity Status",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Implementation",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "2",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-date-start": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "constant",
+                    "constant": "2012-04-15",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "constant",
+                    "constant": "2012-04-15",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Activity Start Date - Actual": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity Start Date - Actual",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "constant",
+                    "constant": "2012-04-28",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "constant",
+                    "constant": "2012-04-28",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Activity End Date - planned": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity End Date - planned",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "constant",
+                    "constant": "2015-12-31",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "constant",
+                    "constant": "2015-12-31",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Activity End Date - actual": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "Activity End Date - actual",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "constant",
+                    "constant": "2015-12-31",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "constant",
+                    "constant": "2015-12-31",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "other-identifier": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "other-identifier",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "ABC123",
+                    "alternatives-counter": ""
+                },
+                "owner-ref": {
+                    "datatype": "constant",
+                    "constant": "AA-AAA-123456789",
+                    "alternatives-counter": ""
+                },
+                "owner-name": {
+                    "datatype": "constant",
+                    "constant": "Agency A",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Description - Objectives": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description - Objectives",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Objectives for the activity, for example from a logical framework",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "2",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "Description - Target Groups": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "Description - Target Groups",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Statement of groups targeted to benefit from the activity",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "3",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-website": {
+            "datatype": "compound",
+            "iati-field": "activity-website",
+            "label": "activity-website",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "http://example.org/activities/123456789",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "contact-info": {
+            "datatype": "compound",
+            "iati-field": "contact-info",
+            "label": "contact-info",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "organisation": {
+                    "datatype": "compound",
+                    "label": "Organisation",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Agency A",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "person-name": {
+                    "datatype": "compound",
+                    "label": "Person Name",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "A. Example",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "job-title": {
+                    "datatype": "compound",
+                    "label": "Job Title",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Transparency Lead",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "telephone": {
+                    "datatype": "compound",
+                    "label": "Telephone",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "0044111222333444",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "email": {
+                    "datatype": "compound",
+                    "label": "Email",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "transparency@example.org",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "mailing-address": {
+                    "datatype": "compound",
+                    "label": "Mailing Address",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Transparency House, The Street, Town, City, Postcode",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "website": {
+                    "datatype": "compound",
+                    "label": "Website",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "http://www.example.org",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "participating-org-Funding": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org-Funding",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Agency B",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "BB-BBB-123456789",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "40",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org-Accountable": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org-Accountable",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Agency C",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "CC-CCC-123456789",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "10",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Extending",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "participating-org-Implementing": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "participating-org-Implementing",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Agency A",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "AA-AAA-123456789",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "21",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Accountable",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "activity-scope": {
+            "datatype": "compound",
+            "iati-field": "activity-scope",
+            "label": "activity-scope",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Multi-national",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "3",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country-A": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "recipient-country-A",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Country A",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "AA",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "50",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-country-B": {
+            "datatype": "compound",
+            "iati-field": "recipient-country",
+            "label": "recipient-country-B",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Country B",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "BB",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "50",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-region-1": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "recipient-region-1",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Region 1",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "123",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "50",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "recipient-region-2": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "recipient-region-2",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Region 2",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "456",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "50",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "location": {
+            "datatype": "compound",
+            "iati-field": "location",
+            "label": "location",
+            "fields": {
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "50",
+                    "alternatives-counter": ""
+                },
+                "location-type": {
+                    "datatype": "compound",
+                    "label": "Location Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "populated place",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "PPL",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "name": {
+                    "datatype": "compound",
+                    "label": "Name",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Country A",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Description text",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "administrative": {
+                    "datatype": "compound",
+                    "label": "Administrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "",
+                            "alternatives-counter": ""
+                        },
+                        "country": {
+                            "datatype": "constant",
+                            "constant": "AA",
+                            "alternatives-counter": ""
+                        },
+                        "adm1": {
+                            "datatype": "constant",
+                            "constant": "",
+                            "alternatives-counter": ""
+                        },
+                        "adm2": {
+                            "datatype": "constant",
+                            "constant": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "coordinates": {
+                    "datatype": "compound",
+                    "label": "Coordinates",
+                    "fields": {
+                        "latitude": {
+                            "datatype": "constant",
+                            "constant": "1.0001",
+                            "alternatives-counter": ""
+                        },
+                        "longitude": {
+                            "datatype": "constant",
+                            "constant": "2.0001",
+                            "alternatives-counter": ""
+                        },
+                        "precision": {
+                            "datatype": "constant",
+                            "constant": "6",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "gazetteer-entry": {
+                    "datatype": "compound",
+                    "label": "Gazetteer Entry",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Open Street Map",
+                            "alternatives-counter": ""
+                        },
+                        "gazetteer-ref": {
+                            "datatype": "constant",
+                            "constant": "OSM",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "location-2": {
+            "datatype": "compound",
+            "iati-field": "location",
+            "label": "location-2",
+            "fields": {
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "50",
+                    "alternatives-counter": ""
+                },
+                "location-type": {
+                    "datatype": "compound",
+                    "label": "Location Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "populated place",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "PPL",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "name": {
+                    "datatype": "compound",
+                    "label": "Name",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Country B",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Description text",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "administrative": {
+                    "datatype": "compound",
+                    "label": "Administrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "",
+                            "alternatives-counter": ""
+                        },
+                        "country": {
+                            "datatype": "constant",
+                            "constant": "BB",
+                            "alternatives-counter": ""
+                        },
+                        "adm1": {
+                            "datatype": "constant",
+                            "constant": "",
+                            "alternatives-counter": ""
+                        },
+                        "adm2": {
+                            "datatype": "constant",
+                            "constant": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "coordinates": {
+                    "datatype": "compound",
+                    "label": "Coordinates",
+                    "fields": {
+                        "latitude": {
+                            "datatype": "constant",
+                            "constant": "1.0001",
+                            "alternatives-counter": ""
+                        },
+                        "longitude": {
+                            "datatype": "constant",
+                            "constant": "2.0001",
+                            "alternatives-counter": ""
+                        },
+                        "precision": {
+                            "datatype": "constant",
+                            "constant": "6",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "gazetteer-entry": {
+                    "datatype": "compound",
+                    "label": "Gazetteer Entry",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Open Street Map",
+                            "alternatives-counter": ""
+                        },
+                        "gazetteer-ref": {
+                            "datatype": "constant",
+                            "constant": "OSM",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "sector-1": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "sector-1",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Sector 1",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "111",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "50",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "sector-2": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "sector-2",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Sector 2",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "222",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "50",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "country-budget-items": {
+            "datatype": "compound",
+            "iati-field": "country-budget-items",
+            "label": "country-budget-items",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Country Chart of Accounts",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "2",
+                    "alternatives-counter": ""
+                },
+                "budget-item": {
+                    "datatype": "compound",
+                    "label": "Budget Item",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Item 1",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "XYZ",
+                            "alternatives-counter": ""
+                        },
+                        "percentage": {
+                            "datatype": "constant",
+                            "constant": "50",
+                            "alternatives-counter": ""
+                        },
+                        "description": {
+                            "datatype": "compound",
+                            "label": "Description",
+                            "fields": {
+                                "text": {
+                                    "datatype": "constant",
+                                    "constant": "Description text",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "country-budget-item-2": {
+            "datatype": "compound",
+            "iati-field": "country-budget-items",
+            "label": "country-budget-item-2",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Country Chart of Accounts",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "2",
+                    "alternatives-counter": ""
+                },
+                "budget-item": {
+                    "datatype": "compound",
+                    "label": "Budget Item",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Item 2",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "ABC",
+                            "alternatives-counter": ""
+                        },
+                        "percentage": {
+                            "datatype": "constant",
+                            "constant": "50",
+                            "alternatives-counter": ""
+                        },
+                        "description": {
+                            "datatype": "compound",
+                            "label": "Description",
+                            "fields": {
+                                "text": {
+                                    "datatype": "constant",
+                                    "constant": "Description text",
+                                    "alternatives-counter": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "policy-marker-1": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker-1",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Policy Marker 1",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "01",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "constant",
+                    "constant": "3",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "policy-marker-2": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "policy-marker-2",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Policy Marker 2",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "02",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "constant",
+                    "constant": "3",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "collaboration-type": {
+            "datatype": "compound",
+            "iati-field": "collaboration-type",
+            "label": "collaboration-type",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Bilateral",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-finance-type": {
+            "datatype": "compound",
+            "iati-field": "default-finance-type",
+            "label": "default-finance-type",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Aid grant excluding debt reorganisation",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "110",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-flow-type": {
+            "datatype": "compound",
+            "iati-field": "default-flow-type",
+            "label": "default-flow-type",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "ODA",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "10",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-aid-type": {
+            "datatype": "compound",
+            "iati-field": "default-aid-type",
+            "label": "default-aid-type",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "General budget support",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "A01",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "default-tied-status": {
+            "datatype": "compound",
+            "iati-field": "default-tied-status",
+            "label": "default-tied-status",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Partially tied",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "3",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "budget-1": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "budget-1",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Start of budget year 2012",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2012-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "End of budget year 2012",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2012-12-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "1000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2012-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "budget-2": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "budget-2",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Start of budget year 2013",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2013-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "End of budget year 2013",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2013-12-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2013-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "budget-2-revised": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "budget-2-revised",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "2",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Start of budget year 2013",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2013-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "End of budget year 2013",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2013-12-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2001",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2013-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "budget-3": {
+            "datatype": "compound",
+            "iati-field": "budget",
+            "label": "budget-3",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Start of budget year 2014",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2014-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "End of budget year 2014",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2014-12-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "3000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2014-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "planned-disbursement-1": {
+            "datatype": "compound",
+            "iati-field": "planned-disbursement",
+            "label": "planned-disbursement-1",
+            "fields": {
+                "updated": {
+                    "datatype": "constant",
+                    "constant": "2012-03-31",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2012-03-31",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2012-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2012-03-31",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2012-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "1000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2012-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "planned-disbursement-2": {
+            "datatype": "compound",
+            "iati-field": "planned-disbursement",
+            "label": "planned-disbursement-2",
+            "fields": {
+                "updated": {
+                    "datatype": "constant",
+                    "constant": "2013-03-31",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2013-03-31",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2013-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2013-03-31",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2013-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2013-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "planned-disbursement-3": {
+            "datatype": "compound",
+            "iati-field": "planned-disbursement",
+            "label": "planned-disbursement-3",
+            "fields": {
+                "updated": {
+                    "datatype": "constant",
+                    "constant": "2014-03-31",
+                    "alternatives-counter": ""
+                },
+                "period-start": {
+                    "datatype": "compound",
+                    "label": "Period Start",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2014-03-31",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2014-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "period-end": {
+                    "datatype": "compound",
+                    "label": "Period End",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2014-03-31",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2014-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "3000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2014-03-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "capital-spend": {
+            "datatype": "compound",
+            "iati-field": "capital-spend",
+            "label": "capital-spend",
+            "fields": {
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "50.5",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "transaction-IF": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "transaction-IF",
+            "fields": {
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "1234",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "1000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2012-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Description text",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Incoming Funds",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "IF",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Agency B",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "BB-BBB-123456789",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "constant",
+                            "constant": "BB-BBB-123456789-1234AA",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Agency A",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "AA-AAA-123456789",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "constant",
+                            "constant": "AA-AAA-123456789-1234",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2012-01-01",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2012-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "flow-type": {
+                    "datatype": "compound",
+                    "label": "Flow Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "ODA",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "10",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "aid-type": {
+                    "datatype": "compound",
+                    "label": "Aid Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "General budget support",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "A01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "finance-type": {
+                    "datatype": "compound",
+                    "label": "Finance Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Aid grant excluding debt reorganisation",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "110",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "tied-status": {
+                    "datatype": "compound",
+                    "label": "Tied Status",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Partially tied",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "3",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "disbursement-channel": {
+                    "datatype": "compound",
+                    "label": "Disbursement Channel",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Money is disbursed through central Ministry of Finance or Treasury",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "1",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "transaction-C": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "transaction-C",
+            "fields": {
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "ABC",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "1000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2012-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Description text",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Commitment",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "C",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Agency B",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "BB-BBB-123456789",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "constant",
+                            "constant": "BB-BBB-123456789-1234",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Agency C",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "CC-CCC-123456789",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "constant",
+                            "constant": "CC-CCC-123456789-1234",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2012-01-01",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2012-01-01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "flow-type": {
+                    "datatype": "compound",
+                    "label": "Flow Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "ODA",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "10",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "aid-type": {
+                    "datatype": "compound",
+                    "label": "Aid Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "General budget support",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "A01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "finance-type": {
+                    "datatype": "compound",
+                    "label": "Finance Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Aid grant excluding debt reorganisation",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "110",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "tied-status": {
+                    "datatype": "compound",
+                    "label": "Tied Status",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Partially tied",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "3",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "disbursement-channel": {
+                    "datatype": "compound",
+                    "label": "Disbursement Channel",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Money is disbursed through central Ministry of Finance or Treasury",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "1",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "transaction-D": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "transaction-D",
+            "fields": {
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "XYZ",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "1000",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "constant",
+                            "constant": "EUR",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "constant",
+                            "constant": "2012-01-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Description text",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Commitment",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "C",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Agency B",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "BB-BBB-123456789",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "constant",
+                            "constant": "BB-BBB-123456789-1234",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Agency C",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "constant",
+                            "constant": "CC-CCC-123456789",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "constant",
+                            "constant": "CC-CCC-123456789-1234",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "2012-01-31",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "constant",
+                            "constant": "2012-01-31",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "flow-type": {
+                    "datatype": "compound",
+                    "label": "Flow Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "ODA",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "10",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "aid-type": {
+                    "datatype": "compound",
+                    "label": "Aid Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "General budget support",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "A01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "finance-type": {
+                    "datatype": "compound",
+                    "label": "Finance Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Aid grant excluding debt reorganisation",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "110",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "tied-status": {
+                    "datatype": "compound",
+                    "label": "Tied Status",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Partially tied",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "3",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "disbursement-channel": {
+                    "datatype": "compound",
+                    "label": "Disbursement Channel",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Money is disbursed through central Ministry of Finance or Treasury",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "1",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "document-link-1": {
+            "datatype": "compound",
+            "iati-field": "document-link",
+            "label": "document-link-1",
+            "fields": {
+                "url": {
+                    "datatype": "constant",
+                    "constant": "http:www.example.org/docs/project.odt",
+                    "alternatives-counter": ""
+                },
+                "format": {
+                    "datatype": "constant",
+                    "constant": "application/odt",
+                    "alternatives-counter": ""
+                },
+                "title": {
+                    "datatype": "compound",
+                    "label": "Title",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Project document",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "category": {
+                    "datatype": "compound",
+                    "label": "Category",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Pre- and post-project impact appraisal",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "A01",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "language": {
+                    "datatype": "compound",
+                    "label": "Language",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "English",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "en",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "document-link-2": {
+            "datatype": "compound",
+            "iati-field": "document-link",
+            "label": "document-link-2",
+            "fields": {
+                "url": {
+                    "datatype": "constant",
+                    "constant": "http:www.example.org/docs/evaluation.odt",
+                    "alternatives-counter": ""
+                },
+                "format": {
+                    "datatype": "constant",
+                    "constant": "application/odt",
+                    "alternatives-counter": ""
+                },
+                "title": {
+                    "datatype": "compound",
+                    "label": "Title",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Project evaluation document",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "category": {
+                    "datatype": "compound",
+                    "label": "Category",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Review of project performance and evaluation",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "A07",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "language": {
+                    "datatype": "compound",
+                    "label": "Language",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "English",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "constant",
+                            "constant": "en",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "related-activity-1": {
+            "datatype": "compound",
+            "iati-field": "related-activity",
+            "label": "related-activity-1",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Related activity name",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "AA-AAA-123456789-6789",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "related-activity-2": {
+            "datatype": "compound",
+            "iati-field": "related-activity",
+            "label": "related-activity-2",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Related activity name",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "AA-AAA-123456789-ABC",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "3",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "conditions": {
+            "datatype": "compound",
+            "iati-field": "conditions",
+            "label": "conditions",
+            "fields": {
+                "attached": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "condition": {
+                    "datatype": "compound",
+                    "label": "Condition",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Conditions text",
+                            "alternatives-counter": ""
+                        },
+                        "type": {
+                            "datatype": "constant",
+                            "constant": "1",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "conditions-2": {
+            "datatype": "compound",
+            "iati-field": "conditions",
+            "label": "conditions-2",
+            "fields": {
+                "attached": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "condition": {
+                    "datatype": "compound",
+                    "label": "Condition",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Conditions text",
+                            "alternatives-counter": ""
+                        },
+                        "type": {
+                            "datatype": "constant",
+                            "constant": "2",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "legacy-data": {
+            "datatype": "compound",
+            "iati-field": "legacy-data",
+            "label": "legacy-data",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Legacy",
+                    "alternatives-counter": ""
+                },
+                "name": {
+                    "datatype": "constant",
+                    "constant": "cost",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "constant",
+                    "constant": "1000",
+                    "alternatives-counter": ""
+                },
+                "iati-equivalent": {
+                    "datatype": "constant",
+                    "constant": "transaction",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

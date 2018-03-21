@@ -1,0 +1,44 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "AICS - Agenzia Italiana per la Cooperazione allo Sviluppo",
+            "ref": "XM-DAC-6-4",
+            "type": "10"
+        },
+        "default-currency": "EUR",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ascii",
+        "data-encoding-override": "",
+        "data-structure": {
+            "multiple": [
+                "budget"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "org-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "org-identifier",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "XM-DAC-6-4",
+                    "alternatives-counter": ""
+                }
+            }
+        }
+    }
+}

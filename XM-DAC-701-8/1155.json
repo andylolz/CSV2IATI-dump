@@ -1,0 +1,1125 @@
+{
+    "organisation": {
+        "reporting-org": {
+            "text": "Japan International Cooperation Agency",
+            "ref": "XM-DAC-701-8",
+            "type": "10"
+        },
+        "default-currency": "JPY",
+        "lang": "en",
+        "contact-info": {
+            "person-name": "",
+            "telephone": "",
+            "email": "",
+            "address": ""
+        },
+        "csv2iati-version": "2.3",
+        "data-encoding": "ISO-8859-2",
+        "data-encoding-override": "",
+        "data-structure": {
+            "multiple": [
+                "transaction"
+            ]
+        }
+    },
+    "mapping": {
+        "hierarchy": {
+            "iati-field": "hierarchy",
+            "datatype": "column",
+            "column": ""
+        },
+        "1_iati-identifier": {
+            "datatype": "compound",
+            "iati-field": "iati-identifier",
+            "label": "1_iati-identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "1_iati_identifier",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "2_other-identifier": {
+            "datatype": "compound",
+            "iati-field": "other-identifier",
+            "label": "2_other-identifier",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "2_other_dentifier",
+                    "alternatives-counter": ""
+                },
+                "owner-ref": {
+                    "datatype": "column",
+                    "column": "2_other_dentifier\u02c7owner_name",
+                    "alternatives-counter": ""
+                },
+                "owner-name": {
+                    "datatype": "column",
+                    "column": "2_other_dentifier\u02c7owner_ref",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "3_title": {
+            "datatype": "compound",
+            "iati-field": "title",
+            "label": "3_title",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "3_title",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "4_description": {
+            "datatype": "compound",
+            "iati-field": "description",
+            "label": "4_description",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "4_description",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "5_activity-status": {
+            "datatype": "compound",
+            "iati-field": "activity-status",
+            "label": "5_activity-status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "5_activity_status",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "5_activity_status\u02c7code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "6-1_activity dates start planned": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "6-1_activity dates start planned",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "6_1_activity dates start planned",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "6_1_activity dates start planned",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "6-2_activity dates start actual": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "6-2_activity dates start actual",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "start-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "6_2_activity dates start actual",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "6_2_activity dates start actual",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "6-3_activity dates end planned": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "6-3_activity dates end planned",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-planned",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "6_3_activity dates end planned",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "6_3_activity dates end planned",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "6-4_activity dates end actual": {
+            "datatype": "compound",
+            "iati-field": "activity-date",
+            "label": "6-4_activity dates end actual",
+            "fields": {
+                "type": {
+                    "datatype": "constant",
+                    "constant": "end-actual",
+                    "alternatives-counter": ""
+                },
+                "iso-date": {
+                    "datatype": "column",
+                    "column": "6_4_activity dates end actua",
+                    "alternatives-counter": ""
+                },
+                "text": {
+                    "datatype": "column",
+                    "column": "6_4_activity dates end actua",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "7_contact-info": {
+            "datatype": "compound",
+            "iati-field": "contact-info",
+            "label": "7_contact-info",
+            "fields": {
+                "type": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "organisation": {
+                    "datatype": "compound",
+                    "label": "Organisation",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Japan International Cooperation Agency",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "person-name": {
+                    "datatype": "compound",
+                    "label": "Person Name",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "job-title": {
+                    "datatype": "compound",
+                    "label": "Job Title",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "telephone": {
+                    "datatype": "compound",
+                    "label": "Telephone",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "81-3-5226-6660/6661/6662/6663",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "email": {
+                    "datatype": "compound",
+                    "label": "Email",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "mailing-address": {
+                    "datatype": "compound",
+                    "label": "Mailing Address",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "Nibancho Center Building 5-25, Niban-cho, Chiyoda-ku, Tokyo 102-8012",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "website": {
+                    "datatype": "compound",
+                    "label": "Website",
+                    "fields": {
+                        "text": {
+                            "datatype": "constant",
+                            "constant": "http://www.jica.go.jp/english/index.html",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "8-1_participating-org funding": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "8-1_participating-org funding",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Japan",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "JP",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "10",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Funding",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "8-2_participating-org extending": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "8-2_participating-org extending",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Japan International Cooperation Agency",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "constant",
+                    "constant": "XM-DAC-701-8",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "constant",
+                    "constant": "10",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Extending",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "8-3_participating-org implementing": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "8-3_participating-org implementing",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "8_3_participating-org implementing",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "8_3_participating-org implementing_type",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Accountable",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "8-4_participating-org accountable": {
+            "datatype": "compound",
+            "iati-field": "participating-org",
+            "label": "8-4_participating-org accountable",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "8_4_participating-org accountable",
+                    "alternatives-counter": ""
+                },
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "type": {
+                    "datatype": "column",
+                    "column": "8_4_participating-org accountable_type",
+                    "alternatives-counter": ""
+                },
+                "role": {
+                    "datatype": "constant",
+                    "constant": "Implementing",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "10_recipient-region": {
+            "datatype": "compound",
+            "iati-field": "recipient-region",
+            "label": "10_recipient-region",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "10_recipient-region",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "10_recipient-region_code",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "11_location": {
+            "datatype": "compound",
+            "iati-field": "location",
+            "label": "11_location",
+            "fields": {
+                "percentage": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "location-type": {
+                    "datatype": "compound",
+                    "label": "Location Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "name": {
+                    "datatype": "compound",
+                    "label": "Name",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "11_location name",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "administrative": {
+                    "datatype": "compound",
+                    "label": "Administrative",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "country": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "adm1": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "adm2": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "coordinates": {
+                    "datatype": "compound",
+                    "label": "Coordinates",
+                    "fields": {
+                        "latitude": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "longitude": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "precision": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "gazetteer-entry": {
+                    "datatype": "compound",
+                    "label": "Gazetteer Entry",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "gazetteer-ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "12_sector": {
+            "datatype": "compound",
+            "iati-field": "sector",
+            "label": "12_sector",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "12_sector",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "12_sector_code",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "percentage": {
+                    "datatype": "constant",
+                    "constant": "100",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "13-1_policy-marker gender": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "13-1_policy-marker gender",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Gender Equality",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "1",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "13_1_policy-marker gender",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "13-2_policy-marker environment": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "13-2_policy-marker environment",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Aid to Environment",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "2",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "13_2_policy-marker environment",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "13-3_policy-marker pdgg": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "13-3_policy-marker pdgg",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Participatory Development/Good Governance",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "3",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "13_3_policy-marker pdgg",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "13-4_policy-marker trade development": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "13-4_policy-marker trade development",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Trade Development",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "4",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "13_4_policy-marker trade development",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "13-5_policy-marker biological diversity": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "13-5_policy-marker biological diversity",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Aid Targeting the Objectives of the Convention on Biological Diversity",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "5",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "13_5_policy-marker biological diversity",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "13-6_policy-marker climate change -mitigation": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "13-6_policy-marker climate change -mitigation",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Aid Targeting the Objectives of the Framework Convention on Climate Change - Mitigation",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "6",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "13_6_policy-marker climate change mitigation",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "13-7_policy-marker\u3000climate change adaptation": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "13-7_policy-marker\u3000climate change adaptation",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Aid Targeting the Objectives of the Framework Convention on Climate Change - Adaptation",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "7",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "13_7_policy-marker climate change adaptation",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "13-8_policy-marker\u3000\uff43ombat \uff44esertification": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "13-8_policy-marker\u3000\uff43ombat \uff44esertification",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Aid Targeting the Objectives of the Convention to Combat Desertification",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "8",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "13_8_policy-marker combat desertification",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "13-9_policy-marker rmnch": {
+            "datatype": "compound",
+            "iati-field": "policy-marker",
+            "label": "13-9_policy-marker rmnch",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "Reproductive, Maternal, Newborn and Child Health (RMNCH)",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "9",
+                    "alternatives-counter": ""
+                },
+                "vocabulary": {
+                    "datatype": "constant",
+                    "constant": "DAC",
+                    "alternatives-counter": ""
+                },
+                "significance": {
+                    "datatype": "column",
+                    "column": "13_9_policy-marker rmnch",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "14_collaboration-type": {
+            "datatype": "compound",
+            "iati-field": "collaboration-type",
+            "label": "14_collaboration-type",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "14_collaboration-type",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "14_collaboration-type_code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "15_default-flow-type": {
+            "datatype": "compound",
+            "iati-field": "default-flow-type",
+            "label": "15_default-flow-type",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "ODA",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "constant",
+                    "constant": "10",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "16_default-finance-type": {
+            "datatype": "compound",
+            "iati-field": "default-finance-type",
+            "label": "16_default-finance-type",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "16_default-finance-type",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "16_default-finance-type_code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "17_default-aid-type": {
+            "datatype": "compound",
+            "iati-field": "default-aid-type",
+            "label": "17_default-aid-type",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "17_default-aid-type",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "17_default-aid-type_code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "18_default-tied-status": {
+            "datatype": "compound",
+            "iati-field": "default-tied-status",
+            "label": "18_default-tied-status",
+            "fields": {
+                "text": {
+                    "datatype": "column",
+                    "column": "18_default-tied-status",
+                    "alternatives-counter": ""
+                },
+                "code": {
+                    "datatype": "column",
+                    "column": "18_default-tied-status_code",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "22_transaction": {
+            "datatype": "compound",
+            "iati-field": "transaction",
+            "label": "22_transaction",
+            "fields": {
+                "ref": {
+                    "datatype": "column",
+                    "column": "",
+                    "alternatives-counter": ""
+                },
+                "value": {
+                    "datatype": "compound",
+                    "label": "Value",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "22_transaction value",
+                            "alternatives-counter": ""
+                        },
+                        "currency": {
+                            "datatype": "column",
+                            "column": "22_transaction value_currency",
+                            "alternatives-counter": ""
+                        },
+                        "value-date": {
+                            "datatype": "column",
+                            "column": "22_transaction value_date",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "description": {
+                    "datatype": "compound",
+                    "label": "Description",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-type": {
+                    "datatype": "compound",
+                    "label": "Transaction Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "22_transaction type",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "22_transaction type_code",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "provider-org": {
+                    "datatype": "compound",
+                    "label": "Provider Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "provider-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "receiver-org": {
+                    "datatype": "compound",
+                    "label": "Receiver Org",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "ref": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "receiver-activity-id": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "transaction-date": {
+                    "datatype": "compound",
+                    "label": "Transaction Date",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "22_transaction date",
+                            "alternatives-counter": ""
+                        },
+                        "iso-date": {
+                            "datatype": "column",
+                            "column": "22_transaction date iso-date ",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "flow-type": {
+                    "datatype": "compound",
+                    "label": "Flow Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "aid-type": {
+                    "datatype": "compound",
+                    "label": "Aid Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "finance-type": {
+                    "datatype": "compound",
+                    "label": "Finance Type",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "tied-status": {
+                    "datatype": "compound",
+                    "label": "Tied Status",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                },
+                "disbursement-channel": {
+                    "datatype": "compound",
+                    "label": "Disbursement Channel",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        },
+                        "code": {
+                            "datatype": "column",
+                            "column": "",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        },
+        "24_activity-website": {
+            "datatype": "compound",
+            "iati-field": "activity-website",
+            "label": "24_activity-website",
+            "fields": {
+                "text": {
+                    "datatype": "constant",
+                    "constant": "http://www.jica.go.jp/oda/allsearch/index.html ",
+                    "alternatives-counter": ""
+                }
+            }
+        },
+        "26_conditions": {
+            "datatype": "compound",
+            "iati-field": "conditions",
+            "label": "26_conditions",
+            "fields": {
+                "attached": {
+                    "datatype": "column",
+                    "column": "26_conditions_attached",
+                    "alternatives-counter": ""
+                },
+                "condition": {
+                    "datatype": "compound",
+                    "label": "Condition",
+                    "fields": {
+                        "text": {
+                            "datatype": "column",
+                            "column": "26_conditions",
+                            "alternatives-counter": ""
+                        },
+                        "type": {
+                            "datatype": "column",
+                            "column": "26_conditions_type",
+                            "alternatives-counter": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
